@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grids</title>
     <style>
+      .boxes {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        gap: 10px;
+      }
       .box {
         background-color: pink;
         color: black;
+        font-size: 20px;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .circle {
+        margin-top: 10px;
+      }
+      .caixa {
+        background-color: rgb(71, 71, 236);
+        color: white;
         font-size: 20px;
         border-radius: 4px;
         text-align: center;
@@ -20,6 +35,12 @@
       <div class="box">Box 1</div>
       <div class="box">Box 2</div>
       <div class="box">Box 3</div>
+    </div>
+
+    <div class="circle">
+      <div class="caixa">Box 1</div>
+      <div class="caixa">Box 2</div>
+      <div class="caixa">Box 3</div>
     </div>
   </body>
 </html>
